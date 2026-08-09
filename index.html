@@ -1,229 +1,143 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>Crawl Syndicate Offroad</title>
-  <meta name="description" content="Custom off-road fabrication, parts, and builds by Crawl Syndicate Offroad." />
-
-  <style>
-    :root { --max: 1100px; }
-
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      color: #111;
-      background: #fff;
-    }
-
-    header {
-      border-bottom: 1px solid #eaeaea;
-    }
-
-    .wrap {
-      max-width: var(--max);
-      margin: 0 auto;
-      padding: 18px 16px;
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .logo img {
-      height: 64px;
-    }
-
-    nav {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #111;
-      font-weight: 600;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    .youtube {
-      padding: 8px 12px;
-      border-radius: 8px;
-      border: 1px solid #111;
-    }
-
-    .hero {
-      padding: 60px 0 30px;
-    }
-
-    h1 {
-      font-size: clamp(34px, 5vw, 56px);
-      margin: 0 0 12px;
-    }
-
-    .sub {
-      font-size: 18px;
-      color: #444;
-      max-width: 600px;
-    }
-
-    .cta {
-      margin-top: 20px;
-      display: flex;
-      gap: 12px;
-    }
-
-    .btn {
-      padding: 12px 16px;
-      border-radius: 10px;
-      border: 1px solid #111;
-      text-decoration: none;
-      font-weight: 700;
-    }
-
-    .btn.primary {
-      background: #111;
-      color: #fff;
-    }
-
-    .services {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-      margin-top: 30px;
-    }
-
-    .card {
-      border: 1px solid #eaeaea;
-      border-radius: 14px;
-      padding: 16px;
-    }
-
-    section {
-      padding: 30px 0;
-      border-top: 1px solid #f0f0f0;
-    }
-
-    .work-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 12px;
-      margin-top: 16px;
-    }
-
-    .work-grid img {
-      width: 100%;
-      height: 230px;
-      object-fit: cover;
-      border-radius: 12px;
-    }
-
-    footer {
-      border-top: 1px solid #eaeaea;
-      padding: 20px 0;
-      font-size: 14px;
-      color: #444;
-    }
-
-    @media (max-width: 900px) {
-      .services { grid-template-columns: 1fr; }
-      .work-grid { grid-template-columns: 1fr; }
-      nav { gap: 10px; }
-      .logo img { height: 52px; }
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Crawl Syndicate Offroad | Custom Fabrication & Off-Road Parts</title>
+<meta name="description" content="Custom off-road fabrication, chassis work, components, and builds from Crawl Syndicate Offroad in Sumter, South Carolina.">
+<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-<header>
-  <div class="wrap brand">
-    <a class="logo" href="/">
-      <img src="images/cs-logo.png" alt="Crawl Syndicate Offroad">
-    </a>
-
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html"><img src="images/cs-logo.png" alt="Crawl Syndicate Offroad"></a>
+    <button class="menu-btn" type="button" aria-label="Open navigation">Menu</button>
     <nav>
-      <a href="#services">Services</a>
-      <a href="#work">Work</a>
-      <a href="#contact">Contact</a>
-      <a class="youtube" href="https://www.youtube.com/@crawlsynidcate" target="_blank">YouTube</a>
+      <a href="fabrication.html">Fabrication</a>
+      <a href="builds.html">Builds</a>
+      <a href="parts.html">Parts</a>
+      <a href="contact.html">Contact</a>
+      <a class="nav-youtube" href="https://www.youtube.com/@crawlsynidcate" target="_blank" rel="noopener">YouTube</a>
+      <a class="nav-store" href="https://crawl-syndicate-offroad.gocartapp.com/" target="_blank" rel="noopener">Online Store</a>
     </nav>
   </div>
 </header>
 
-<main class="wrap">
 
-  <div class="hero">
-    <h1>Built for the trail. Engineered to take abuse.</h1>
-
-    <p class="sub">
-      Crawl Syndicate Offroad designs and fabricates custom components, chassis, and parts for serious off-road builds.
-    </p>
-
-    <div class="cta">
-      <a class="btn primary" href="#contact">Start a build</a>
-      <a class="btn" href="#work">View builds</a>
-    </div>
-
-    <div class="services" id="services">
-      <div class="card">
-        <h3>Custom Fabrication</h3>
-        <p>One-off parts, brackets, and fully custom solutions built to handle real abuse.</p>
-      </div>
-
-      <div class="card">
-        <h3>Tube & Chassis Work</h3>
-        <p>Cages, structural reinforcement, and full builds designed for performance and safety.</p>
-      </div>
-
-      <div class="card">
-        <h3>Off-Road Components</h3>
-        <p>Parts built for crawling, durability, and real-world use — not just looks.</p>
-      </div>
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div class="eyebrow">Crawl Syndicate Offroad · Sumter, SC</div>
+    <h1>Built to crawl. Built to take abuse.</h1>
+    <p>Custom fabrication, chassis work, and off-road components for serious trail rigs and purpose-built crawlers.</p>
+    <div class="cta-row">
+      <a class="btn btn-store" href="https://crawl-syndicate-offroad.gocartapp.com/" target="_blank" rel="noopener">SHOP THE ONLINE STORE</a>
+      <a class="btn btn-secondary" href="builds.html">View Builds</a>
+      <a class="btn btn-secondary" href="contact.html">Start a Project</a>
     </div>
   </div>
+</section>
 
-  <section id="work">
-    <h2>Recent builds</h2>
-
-    <div class="work-grid">
-      <img src="images/20241103_151134.jpg">
-      <img src="images/20251123_104827.jpg">
-      <img src="images/20251123_104845.jpg">
-      <img src="images/20251222_140325.jpg">
-      <img src="images/20260103_143102.jpg">
-      <img src="images/20260110_110128.jpg">
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-
-    <p>
-      <strong>Email:</strong>
-      <a href="mailto:austin.gibson@crawlsyndicateoffroad.com">austin.gibson@crawlsyndicateoffroad.com</a><br>
-      <strong>Location:</strong> Sumter, SC
-    </p>
-  </section>
-
-</main>
-
-<footer>
+<section class="section">
   <div class="wrap">
-    © <span id="y"></span> Crawl Syndicate Offroad
-  </div>
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">What we do</div>
+        <h2>Fabrication, builds, and parts.</h2>
+      </div>
+      <p>Separate pages give customers a clearer path to the work they actually care about instead of making them hunt through one long homepage.</p>
+    </div>
 
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
+    <div class="service-grid">
+      <article class="service-card">
+        <h3>Custom Fabrication</h3>
+        <p>One-off brackets, mounts, tabs, gussets, fixtures, and custom solutions for off-road applications.</p>
+        <a href="fabrication.html">Explore fabrication →</a>
+      </article>
+
+      <article class="service-card">
+        <h3>Tube & Chassis Builds</h3>
+        <p>Cages, chassis work, structural fabrication, packaging, and full-build integration.</p>
+        <a href="builds.html">See builds →</a>
+      </article>
+
+      <article class="service-card">
+        <h3>Off-Road Components</h3>
+        <p>Purpose-built parts and components designed around real trail use and serviceability.</p>
+        <a href="parts.html">Browse parts →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="store-banner">
+      <div>
+        <div class="eyebrow">Parts available now</div>
+        <h2>Looking for something you can buy today?</h2>
+        <p>Go straight to the Crawl Syndicate Offroad online store for current products and availability.</p>
+      </div>
+      <a class="btn btn-store" href="https://crawl-syndicate-offroad.gocartapp.com/" target="_blank" rel="noopener">VISIT ONLINE STORE</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">Recent work</div>
+        <h2>Built in the shop. Used in the real world.</h2>
+      </div>
+      <p>The gallery now uses larger desktop images and opens the original photo when clicked, so visitors can actually see the fabrication detail.</p>
+    </div>
+
+    <div class="gallery">
+      <a class="wide" href="images/20251123_104827.jpg" data-lightbox><img src="images/20251123_104827.jpg" alt="Custom off-road build side view"></a>
+      <a href="images/20241103_151134.jpg" data-lightbox><img src="images/20241103_151134.jpg" alt="Tube chassis fabrication"></a>
+      <a href="images/20251123_104845.jpg" data-lightbox><img src="images/20251123_104845.jpg" alt="Custom off-road build front view"></a>
+      <a href="images/20260103_143102.jpg" data-lightbox><img src="images/20260103_143102.jpg" alt="Fabricated shop component"></a>
+      <a href="images/20260110_110128.jpg" data-lightbox><img src="images/20260110_110128.jpg" alt="Plasma-cut fabrication parts"></a>
+      <a href="images/20251222_140325.jpg" data-lightbox><img src="images/20251222_140325.jpg" alt="Custom fabrication detail"></a>
+    </div>
+  </div>
+</section>
+
+<div class="lightbox" aria-hidden="true">
+  <button class="lightbox-close" type="button" aria-label="Close image">×</button>
+  <img src="" alt="Expanded work photo">
+</div>
+
+<section class="section">
+  <div class="wrap">
+    <div class="content-grid">
+      <div>
+        <div class="eyebrow">Start a project</div>
+        <h2>Need something built for your rig?</h2>
+        <p style="color:var(--muted);max-width:700px">Send over what you're working on, what problem you're trying to solve, and any photos or dimensions you already have.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="contact.html">Contact Crawl Syndicate</a>
+          <a class="btn btn-secondary" href="https://www.youtube.com/@crawlsynidcate" target="_blank" rel="noopener">Watch on YouTube</a>
+        </div>
+      </div>
+      <div class="contact-box">
+        <strong>Email</strong><br>
+        <a href="mailto:austin.gibson@crawlsyndicateoffroad.com">austin.gibson@crawlsyndicateoffroad.com</a>
+        <p><strong>Location</strong><br>Sumter, SC</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <span>© <span id="year"></span> Crawl Syndicate Offroad</span>
+    <span>Sumter, SC · <a href="mailto:austin.gibson@crawlsyndicateoffroad.com">austin.gibson@crawlsyndicateoffroad.com</a></span>
+  </div>
 </footer>
+<script src="script.js"></script>
 
 </body>
 </html>
